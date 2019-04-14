@@ -75,7 +75,7 @@ public class SampleAtmosphereApplicationTests {
 	@Test
    	public void mySimpleEqualsTest()  throws Exception{
          
-        assertThat("Nattu").isEqualTo("Nattu");
+        assertThat("Nattu").isEqualTo("Pottu");
     }
 	@Configuration
 	static class ClientConfiguration implements CommandLineRunner {
