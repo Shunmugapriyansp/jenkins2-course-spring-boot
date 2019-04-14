@@ -12,6 +12,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ * Updated by Priyans
  */
 
 package sample.atmosphere;
@@ -74,7 +75,7 @@ public class SampleAtmosphereApplicationTests {
 	@Test
    	public void mySimpleEqualsTest()  throws Exception{
          
-        assertThat("Nattu").isEqualTo("pottu");
+        assertThat("Nattu").isEqualTo("Nattu");
     }
 	@Configuration
 	static class ClientConfiguration implements CommandLineRunner {
