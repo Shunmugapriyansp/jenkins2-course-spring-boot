@@ -44,7 +44,7 @@ import org.springframework.web.socket.client.standard.StandardWebSocketClient;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.testng.Assert.assertEquals;
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = SampleAtmosphereApplication.class, webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -72,10 +72,9 @@ public class SampleAtmosphereApplicationTests {
 				.contains("{\"message\":\"test\",\"author\":\"test\",\"time\":");
 	}
 	@Test
-   	public void mySimpleEqualsTest(){
+   	public void mySimpleEqualsTest()  throws Exception{
          
-        String expectedName = "Nattu";
-        assertEquals(expectedName, "pottu");
+        assertThat("Nattu").isEqualTo("pottu");
     }
 	@Configuration
 	static class ClientConfiguration implements CommandLineRunner {
